@@ -6,7 +6,7 @@ python -m venv NmaeofVirtualEnv
 ```
 ### Activate it 
 ``` 
-source path/to/venv/bin/activate
+source path/to/virtualemvironment/bin/activate
 ```
 ### Create requirement.txt
 ```
