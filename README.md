@@ -1,10 +1,14 @@
-# python 
-## virtual environment
-### create
-```python -m venv NmaeofVirtualEnv```
-### activate it 
-``` source path/to/venv/bin/activate```
-### create requirement.txt
+# Python 
+## Virtual Environment
+### Create
+```
+python -m venv NmaeofVirtualEnv
+```
+### Activate it 
+``` 
+source path/to/venv/bin/activate
+```
+### Create requirement.txt
 ```
 pip freeze > requirements.txt
 ```
