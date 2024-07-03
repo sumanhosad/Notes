@@ -6,5 +6,5 @@
 ``` source path/to/venv/bin/activate```
 ### create requirement.txt
 ```
-
-        pip freeze > requirements.txt```
+pip freeze > requirements.txt
+```
