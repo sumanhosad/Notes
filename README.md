@@ -12,3 +12,7 @@ source path/to/venv/bin/activate
 ```
 pip freeze > requirements.txt
 ```
+### Install using requirements.txt
+```
+pip install -r requirements.txt
+```
