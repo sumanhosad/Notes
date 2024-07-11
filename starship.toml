@@ -1,0 +1,85 @@
+format = """
+[](#ffffff)\
+[󰣇](bg:#ffffff fg:#057dcd)\
+$username\
+[](bg:#000000 fg:#ffffff)\
+$directory\
+[](fg:#202020 bg:#ffffff)\
+$git_branch\
+$git_status\
+[](fg:#ffffff bg:#000000)\
+$c\
+$rust\
+$golang\
+$nodejs\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
+[](fg:#000000 bg:#ffffff)\
+$time\
+[](fg:#ffffff)\
+\n$character"""
+
+[directory]
+style = "fg:#42ab49 bg:#000000"
+format = "[ $path ]($style)"
+truncation_length = 0
+truncate_to_repo = false
+
+[username]
+show_always = true
+style_user = "bg:#ffffff fg:#057dcd"
+style_root = "bg:color_orange fg:color_fg0"
+format = '[ $user ]($style)'
+
+[git_branch]
+symbol = ""
+style = "bg:#ffffff"
+format = '[[ $symbol $branch ](fg:#000000 bg:#ffffff)]($style)'
+
+[git_status]
+style = "bg:#ffffff"
+format = '[[($all_status$ahead_behind )](fg:#000000 bg:#ffffff)]($style)'
+
+[nodejs]
+symbol = ""
+format = '[[ $symbol ](fg:color_fg0 bg:#202020)]($style)'
+
+[c]
+symbol = " "
+format = '[[ $symbol ](fg:color_fg0 bg:#202020)]($style)'
+
+[rust]
+symbol = ""
+format = '[[ $symbol ](fg:color_fg0 bg:#202020)]($style)'
+
+[golang]
+symbol = ""
+format = '[[ $symbol ](fg:color_fg0 bg:#202020)]($style)'
+
+[php]
+symbol = ""
+format = '[[ $symbol ](fg:color_fg0 bg:#202020)]($style)'
+
+[java]
+symbol = " "
+format = '[[ $symbol ](fg:color_fg0 bg:#202020)]($style)'
+
+[kotlin]
+symbol = ""
+format = '[[ $symbol ](fg:color_fg0 bg:#202020)]($style)'
+
+[haskell]
+symbol = ""
+format = '[[ $symbol ](fg:color_fg0 bg:#202020)]($style)'
+
+[python]
+symbol = ""
+format = '[[ $symbol ](fg:color_fg0 bg:#202020)]($style)'
+
+[time]
+disabled = false
+time_format = "%I:%M %p"# Hourstyle = "bg:#202020"
+format = '[[  $time ](fg:#000000 bg:#ffffff)]($style)'
