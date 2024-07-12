@@ -16,3 +16,26 @@ pip freeze > requirements.txt
 ```
 pip install -r requirements.txt
 ```
+
+# Linux Commands 
+## Pacman
+### See Installed Packages
+```
+pacman -Q
+```
+#### List Foreign (Manually Installed or AUR) Packages:
+
+```
+pacman -Qm
+```
+#### List packages by installation date:
+```
+pacman -Qi | grep -E "Name|Install Date" | paste - - | sort -k4,5
+```
+### remove lock file 
+##### :: Synchronizing package databases...
+##### error: failed to synchronize all databases (unable to lock database)
+```
+sudo rm /var/lib/pacman/db.lck
+
+```
