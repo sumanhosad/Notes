@@ -46,3 +46,8 @@ sudo rm /var/lib/pacman/db.lck
 #if you dont specify the version then its gonna pull the latest
 docker pull name:version
 ```
+### Docker run
+
+
+```bash
+docker run <image_name>
