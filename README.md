@@ -39,3 +39,10 @@ pacman -Qi | grep -E "Name|Install Date" | paste - - | sort -k4,5
 sudo rm /var/lib/pacman/db.lck
 
 ```
+# Docker
+## Docker pull
+
+```
+#if you dont specify the version then its gonna pull the latest
+docker pull name:version
+```
