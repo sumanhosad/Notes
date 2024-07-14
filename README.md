@@ -40,14 +40,80 @@ sudo rm /var/lib/pacman/db.lck
 
 ```
 # Docker
-## Docker pull
 
+## Docker pull
+if you dont specify the version then its gonna pull the latest
 ```bash
-#if you dont specify the version then its gonna pull the latest
 docker pull name:version
 ```
-### Docker run
 
+## Docker run
 
+To run a basic container using an image, use the following command:
 ```bash
 docker run <image_name>
+```
+To start a container and access its interactive shell:
+```bash
+docker run -it <image_name>
+```
+To run a container in the background (detached mode):
+```bash
+docker run -d <image_name>
+```
+To assign a specific name to the container:
+```bash
+docker run --name <container_name> -it <image_name>
+```
+To expose a port from the container to the host:
+```bash
+docker run -p <host_port>:<container_port> -d <image_name>
+```
+
+## Docker stop
+
+List Running Containers
+```bash
+docker ps
+```
+List All Containers
+```bash
+docker ps -a
+```
+Stop The Running Container
+```bash
+docker stop <container_id_or_name>
+```
+
+## Docker Registries
+
+### A Docker registry is a service for storing and distributing Docker images.
+
+Log In to a Docker Registry
+```bash
+docker login <registry_url>
+```
+Log Out from a Docker Registry
+```bash
+docker logout <registry_url>
+```
+To download an image from a registry
+```bash
+docker pull <image_name>:<version/tag>
+```
+To upload an image to a registry
+```bash
+docker push <image_name>:<tag>
+```
+Search for Images in a Registry
+```bash
+docker search <search_term>
+```
+List Local Images
+```bash
+docker images
+```
+To delete an image from your local registry
+```bash
+docker rmi <image_name>:<tag>
+```
